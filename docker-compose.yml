@@ -1,0 +1,10 @@
+version: '2'
+
+# Define the services/containers to be run
+services:
+  reactapp: #name of your service
+    build: ./ # specify the directory of the Dockerfile
+    ports:
+      - "3000:3000" #specify ports forwarding
+    volumes:
+      - .:/app
